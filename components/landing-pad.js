@@ -13,7 +13,7 @@ AFRAME.registerComponent('landing-pad', {
     var contactNormal = e.detail.contact.ni
     var verticalContact = contactNormal.y
 
-    if(verticalContact <= -0.5 && !this.touched ) {
+    if (verticalContact <= -0.5 && !this.touched ) {
       this.el.setAttribute('color', 'green');
       this.touched = true;
       this.score += 10
