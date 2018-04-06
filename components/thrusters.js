@@ -1,7 +1,7 @@
 AFRAME.registerComponent('thrusters', {
   schema: {
     fuelLevel: {default: 500 },
-    thrusterVelocityMax: {default: 5 },
+    thrusterVelocityMax: {default: 90 },
   },
 
   init: function() {
