@@ -1,0 +1,36 @@
+{
+  "name": "lunar-lander-vr",
+  "description": "Lunar Lander VR",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server",
+    "deploy": "ghpages",
+    "build": "browserify index.js -o build/bundle.js -t [ babelify --presets [ @babel/preset-env ] ]",
+    "release": "browserify index.js -t [ babelify --presets [ @babel/preset-env ] ] | uglifyjs > build/bundle.min.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "ghpages": "0.0.10",
+    "live-server": "^1.2.0",
+    "uglify-es": "^3.3.9"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-example",
+    "aframe-boilerplate",
+    "aframe-scene",
+    "webvr",
+    "vr"
+  ],
+  "dependencies": {
+    "aframe": "^0.8.2",
+    "aframe-environment-component": "^1.1.0",
+    "aframe-physics-system": "^3.2.0",
+    "aframe-rain": "^1.0.2"
+  }
+}

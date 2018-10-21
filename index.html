@@ -1,13 +1,6 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.0.0/dist/aframe-extras.min.js"></script>
-    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.0.2/dist/aframe-physics-system.min.js"></script>
-    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
-    <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script>
-
-    <script src='./components/thrusters.js'></script>
-    <script src='./components/landing-pad.js'></script>
+    <script src='./build/bundle.js'></script>
   </head>
   <body>
     <a-scene rain score='0' physics='gravity: -1.62; restitution: 0;'>
@@ -20,7 +13,7 @@
                 thrusters="fuelLevel: 3000;"
                 position="3 5 4">
         <a-entity camera
-                  look-controls='pointerLockEnabled=false'
+                  look-controls='pointerLockEnabled=true;'
                   position="0 1.6 0"
                   >
                   <a-cursor material='color: green;'>
